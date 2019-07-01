@@ -1,0 +1,28 @@
+Class Habit
+	Field: Goal text box ("What habit do you want to track?")
+	
+	
+Class Daily Record
+	Field: Which habit?
+	Field: Date/Time Created
+	Field: How many did you do? (unique)
+	
+
+Class User
+
+Class Observer (may just be part of User)
+
+
+Views:
+View all your habits (habits_list) - /habits/
+Create Habit "/habits/new"
+View habit records ("habit detail") "habits/<pk>"
+Add habit daily_record /habits/pk/new-record/
+Edit record - /records/<pk>
+
+in models.py, added a Habit class and gave it a couple fields.
+in models.py, added a Daily_Record class
+
+
+add habits to admin,
+make a function to display all habits on /habits/
