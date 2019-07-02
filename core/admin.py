@@ -14,7 +14,7 @@ class HabitAdmin(admin.ModelAdmin):
 
 class DailyRecordAdmin(admin.ModelAdmin):
     model = DailyRecord
-    list_display = ("text",)
+    list_display = ("achieved",)
 
 admin.site.register(Habit, HabitAdmin)
 admin.site.register(DailyRecord, DailyRecordAdmin)
