@@ -26,3 +26,5 @@ in models.py, added a Daily_Record class
 
 add habits to admin,
 make a function to display all habits on /habits/
+
+Clinton says Django/Models/Relations website is a "gold mine" of information

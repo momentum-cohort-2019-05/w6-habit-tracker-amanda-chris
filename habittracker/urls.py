@@ -22,7 +22,8 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('registration.backends.simple.urls')),
-    path('habits/', views.HabitListView.as_view(), name='habits'),
+    # path('habits/', views.HabitListView.as_view(), name='habits'),
+    path('', views.index, name='home'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

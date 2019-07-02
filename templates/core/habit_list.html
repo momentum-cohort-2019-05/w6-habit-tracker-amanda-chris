@@ -2,4 +2,38 @@
 
 {% block content %}
 <h1>This is my habit list template</h1>
+
+{% for habit in habits %}
+{% if habit.name %}
+    <h2>{{ habit.name }} </h2>
+    <button>{{ habit.target }} </button>
+{% endif %}
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endblock %}
