@@ -18,3 +18,4 @@ class DailyRecordAdmin(admin.ModelAdmin):
 
 admin.site.register(Habit, HabitAdmin)
 admin.site.register(DailyRecord, DailyRecordAdmin)
+
