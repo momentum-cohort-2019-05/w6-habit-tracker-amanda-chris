@@ -28,3 +28,15 @@ add habits to admin,
 make a function to display all habits on /habits/
 
 Clinton says Django/Models/Relations website is a "gold mine" of information
+
+To Do:
+
+Incorporate User into site
+Maybe Unique Together?
+URLS/Views:
+	Done: Show All Habits
+	User - Show All Habits
+		Within Habits - Daily Record Detail View, needs to show whether goal achieved or 		not
+	Need: show Daily Records per Habit (when User is logged in)
+	
+	
