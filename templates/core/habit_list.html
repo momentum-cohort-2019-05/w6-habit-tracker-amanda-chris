@@ -3,10 +3,13 @@
 {% block content %}
 <h1>This is my habit list template</h1>
 
+<a href="{% url 'addrecord' %}">Add New Habit</a>
+
 {% for habit in habits %}
 {% if habit.name %}
     <h2>{{ habit.name }} </h2>
-    <button>{{ habit.target }} </button>
+    <h3>{{ habit.target }} </h3>
+    <a href="{% url 'showhabit' habit.pk %}">Show Habit</a>
 {% endif %}
 {% endfor %}
 

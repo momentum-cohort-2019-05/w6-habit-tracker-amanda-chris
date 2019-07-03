@@ -26,5 +26,4 @@ class DailyRecord(models.Model):
     date = models.DateField(default=date.today)
     
     class Meta:
-        ordering = ['-date']
         unique_together = ['entry', 'date']

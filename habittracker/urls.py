@@ -24,6 +24,9 @@ urlpatterns = [
     path('accounts/', include('registration.backends.simple.urls')),
     # path('habits/', views.HabitListView.as_view(), name='habits'),
     path('', views.index, name='home'),
+    path('addrecord/', views.HabitCreate.as_view(), name='addrecord'),
+    path('habits/<int:pk>', views.ShowHabit.as_view(), name='showhabit'),
+    path('editrecord/<int:pk>', views.DailyRecordUpdate.as_view(), name='dailyrecordupdate')
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
